@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Reproductor de Video de YouTube</title>
+    <style>
+        body {
+            background-color: black;
+          }
+
+     
+
+      /* Estilos para el reproductor de video */
+      #player {
+        width: 640px;
+        height: 360px;
+        background-color: black;
+        margin: 0 auto; /* Nueva propiedad para centrar */
+        margin-left: 325px;
+      }
+      
+      /* Estilos para la lista de botones */
+      #buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        flex-direction: column;
+      }
+      
+      button {
+        margin: 0px;
+        padding: 10px;
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        color: rgb(250, 252, 252);
+      }
+      
+      button.active {
+        background-color: rgb(193, 216, 60);
+      }
+      
+      /* Estilos para el buscador */
+      header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #333;
+        color: rgb(240, 246, 247);
+        padding: 10px;
+      }
+      
+      input[type=text] {
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+      
+      button[type=submit] {
+        padding: 10px;
+        background-color: rgb(241, 245, 15);
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="search">
+        <input type="text" id="search-input" placeholder="Buscar video...">
+        <button type="submit" id="search-button">Buscar</button>
+      </div>
+    </header>
+    <div id="player"></div>
+    <div id="buttons"></div>
+    
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="index2.js"></script>
+
+
+
+    
+
+
+
+  </body>
+</html>
